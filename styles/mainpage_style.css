@@ -1,0 +1,334 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.container, html {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 380px;
+    align-content: center;
+    align-items: center;
+}
+
+            /* Стили Хедера */
+
+.header{
+    width: 100%;
+}
+
+.logo{
+    width: 100%;
+    text-align: center;
+
+}
+.logo>img {
+    width: 100%;
+}
+
+.header_menu {
+    margin: 3rem;
+    
+}
+
+.header_menu ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0.5rem;
+    color: rgb(51, 45, 45);
+}
+
+li a:hover {
+    color: rgba(51, 45, 45, 0.68)
+}
+
+                /* Стили Контента */
+
+.content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin-bottom: 4rem;
+}              
+
+.developer_photo img {
+    width: 100%;
+    height: 52rem;
+    box-shadow: 10px 15px 10px rgba(51, 45, 45, 0.68);
+    border-radius: 15px;
+}
+.developer_info {
+    width: 100%;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+    
+}
+
+
+.developer_info > h1, h3, p {
+    width: 100%;
+    display: block;
+    margin: 1.5rem 1rem 0rem 1rem;
+    font-family: 'Montserrat', sans-serif, monospace;
+    letter-spacing: 1.2px;
+    
+    
+}
+
+.developer_info > h1 {
+    display: block;
+    clear: both;
+    width: 16ch;
+    color: rgb(51, 45, 45);
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-family: monospace;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid orange;
+    animation: flashing-coursor 0.75s step-end infinite, printed-text 1.5s steps(16);
+}
+
+
+@keyframes flashing-coursor {
+    0% {border-color: rgba(90, 86, 86, 0.68);
+    }
+    50% {border-color: transparent; 
+    }
+    100% {border-color: rgba(90, 86, 86, 0.68);
+    }
+
+}
+
+@keyframes printed-text {
+    from {
+        width: 0;
+    }
+    
+}
+
+
+.developer_info > h3 {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    white-space: nowrap;
+    overflow: hidden;
+    color: rgba(51, 45, 45, 0.68);
+}
+    
+
+.developer_info > p {
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: rgb(51, 45, 45);
+    
+}
+
+.content_button {
+    display: inline-block;
+    margin: 2.5rem 8rem 0rem 1rem;
+    padding: 1rem;
+    background-color: rgba(51, 45, 45, 0.68);
+    border-radius: 17.5px;
+    border: 2px solid rgb(51, 45, 45);
+    text-align: center;
+    box-shadow: 8px 10px 15px 0px rgba(51, 45, 45, 0.68);
+    transition: 0.5s;
+    
+}
+.content_button:hover{
+    background-color: rgba(159, 146, 146, 0.68); ;
+    transition-timing-function: linear;
+
+}
+.content_button>a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0.5rem;
+    color: white;
+    transition: 0.5s;
+}
+
+.content_button:hover :nth-child(1) {
+    color: black;
+    transition-timing-function: linear;
+}
+
+
+                /* Стили Футера */
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 3rem;
+    margin-top: auto;
+    border-top: 2px solid rgba(51, 45, 45, 0.68);
+  
+}
+
+.copyright {
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1.2px;
+    color: rgb(51, 45, 45);
+    order: 2;
+}
+
+.footer_social {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    order: 1;
+}
+
+.footer_social>a>i {
+    color: black;
+    padding: 1rem;
+    font-size: 2rem;
+    transition: 1s;
+
+}
+
+.footer_social>a>i:hover {
+    transform: scale(1.3);
+}
+
+/* Адаптивный режим Десктоп */
+
+@media (min-width: 381px) {
+    .container, html {
+        margin: 0 auto;
+        display: flex;
+        flex-direction:column;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 1440px;
+        align-content: center;
+        align-items: center;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   
+}
+
+.logo{
+    text-align: center;
+    width: 40%;
+
+}
+.logo>img {
+    width: 30rem;
+}
+
+.header_menu {
+    width: 60%;
+    margin: 3rem;
+    
+}
+.header_menu ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-content: center;
+    align-items: center;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    margin: 3.5rem 2rem;
+    color: rgb(51, 45, 45);
+}
+
+.content {
+    margin-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
+}
+
+
+
+.developer_photo {
+    text-align: center;
+    width: 45%;
+}
+
+.developer_photo img {
+    width: 31rem;
+    height: 63rem;
+}
+
+.developer_info {
+    width: 55%;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    padding: 0rem 10rem
+    
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem 7rem
+}
+
+.copyright {
+order: 1;
+}
+
+.footer_social {
+order: 2;
+}
+
+}

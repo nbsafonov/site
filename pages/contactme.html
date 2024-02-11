@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/contactme_style.css">
+    <link rel="stylesheet" href="../modern-normalize/modern-normalize.css">
+    <link rel="stylesheet" href="../fonts/Montserrat/Montserrat-VariableFont_wght.ttf">
+    <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
+    <title>Связаться со мной|Николай Сафонов</title>
+</head>
+<body><div class="container">
+    <div class="header">
+        <div class="logo">
+            <img src="../images/logo.png" alt="Логотип">
+        </div>
+        <div class="header_menu">
+            <ul class="header__menu__ul">
+              <li><a href="../index.html">Главная</a></li>
+              <li><a href="aboutme.html">Обо мне</a></li>
+              <li><a href="myprojects.html">Проекты</a></li>
+              <li><a href="contactme.html">Связаться со мной</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="content">
+        <div class="feedback">
+            <h1>Напишите мне</h1>
+            <h3>Я буду очень рад вашему письму</h3>
+            <form action="" method="post">
+                <P>
+                <label>Имя <span style="color: red;">*</span></label>
+                <input required type="text" name="first_name">
+              </p>
+              <p>
+                <label>Фамилия</label>
+                <input type="text" name="last_name">
+              </p>
+              <p>
+                  <form>
+                    <label>Ваш пол</label>
+                    <input id="man" type="radio" name="gender">
+                    <label for="yes">Мужчина</label>
+                
+                    <input id="woman" type="radio" name="gender">
+                    <label for="no">Женщина</label>
+              </p>
+              <p>
+                <label>Email <span style="color: red;">*</span></label>
+                <input required type="email" name="email">
+              </p>
+              <p>
+                <label>Телефон</label>
+                <input type="tel" name="phone">
+              </p>
+              <p>
+                <textarea  name="message" id="" cols="30" rows="5" placeholder="Оставьте ваше сообщение"></textarea>
+              </p>
+              <p>
+                <input class="form__button" type="submit" value="Отправить">
+              </p>
+              <p>
+                <input class="form__button" type="reset" value="Сбросить">
+              </p>
+            </form>
+            <div class="main_area">
+            <span style="color: red;">*</span><span >- Обязательные поля для заполнения</span>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+      <div class="copyright">
+          <p> &copy; Сафонов Николай. 2024. </p>
+      </div>
+      <div class="footer_social">
+          <a href="https://github.com/nbsafonov" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+          <a href="https://vk.com/nikolay.safonov" target="_blank"><i class="fa fa-vk" aria-hidden="true"></i></a>
+          <a href="https://t.me/nikolay_safonov" target="_blank"><i class="fa fa-telegram" aria-hidden="true"></i></a>
+          <a href="mailto:nikolay.safonov.48@yandex.ru" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+      </div>
+  </div>
+</div>
+    
+</body>
+</html>
