@@ -234,7 +234,7 @@ li a:hover {
 /* Адаптивный режим Десктоп */
 
 
-@media screen (min-width: 381px) {
+@media (min-width: 381px) {
     .container, html {
         margin: 0 auto;
         display: flex;
