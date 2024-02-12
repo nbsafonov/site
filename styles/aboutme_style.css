@@ -193,7 +193,7 @@ td:hover {
 
     /* Адаптивный режим Десктоп */
 
-@media (min-width: 381px) {
+@media (min-width: 550px) {
     .container, html {
         margin: 0 auto;
         display: flex;
