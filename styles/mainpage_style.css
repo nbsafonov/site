@@ -93,7 +93,7 @@ li a:hover {
 .developer_info > h1, h3, p {
     width: 100%;
     display: block;
-    margin: 1.5rem 1rem 0rem 1rem;
+    margin: 1.5rem 1rem 0rem 0rem;
     font-family: 'Montserrat', sans-serif, monospace;
     letter-spacing: 1.2px;
     
